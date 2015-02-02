@@ -1,0 +1,23 @@
+[main] cpp 1001 (0) exception: trapped!
+[main] cpp 1001 (0) exception: code 0xC0000005 at 0x6105AFE2
+[main] cpp 1001 (0) exception: ax 0x61286669 bx 0xA03A578 cx 0x72657373 dx 0x61286669
+[main] cpp 1001 (0) exception: si 0x170 di 0xA03A478 bp 0x242F7D0 sp 0x242F7A4
+[main] cpp 1001 (0) exception: exception is: STATUS_ACCESS_VIOLATION
+[main] cpp 1001 (0) stack: Stack trace:
+[main] cpp 1001 (0) stack: frame 0: sp = 0x242F344, pc = 0x6100A2C3
+[main] cpp 1001 (0) stack: frame 1: sp = 0x242F380, pc = 0x77DBB499
+[main] cpp 1001 (0) stack: frame 2: sp = 0x242F3A4, pc = 0x77DBB46B
+[main] cpp 1001 (0) stack: frame 3: sp = 0x242F454, pc = 0x77D70133
+[main] cpp 1001 (0) stack: frame 4: sp = 0x242F7D0, pc = 0x6101A4A7
+[main] cpp 1001 (0) stack: frame 5: sp = 0x242F7E0, pc = 0x40F8A7
+[main] cpp 1001 (0) stack: frame 6: sp = 0x242F908, pc = 0x407604
+[main] cpp 1001 (0) stack: frame 7: sp = 0x242F9A4, pc = 0x40584A
+[main] cpp 1001 (0) stack: frame 8: sp = 0x242FAB0, pc = 0x61004402
+[main] cpp 1001 (0) stack: frame 9: sp = 0x242FF50, pc = 0x61004420
+[main] cpp 1001 (0) stack: frame 10: sp = 0x242FF5C, pc = 0x416ACE
+[main] cpp 1001 (0) stack: frame 11: sp = 0x242FF6C, pc = 0x40103A
+[main] cpp 1001 (0) stack: frame 12: sp = 0x242FF88, pc = 0x75B9338A
+[main] cpp 1001 (0) stack: frame 13: sp = 0x242FF94, pc = 0x77D99F72
+[main] cpp 1001 (0) stack: frame 14: sp = 0x242FFD4, pc = 0x77D99F45
+[main] cpp 1001 (0) stack: frame 15: sp = 0x242FFEC, pc = 0x0
+[main] cpp 1001 (0) stack: End of stack trace
