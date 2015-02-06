@@ -21,3 +21,17 @@ int push(Stack *newStack, void *data){
 void * pop(Stack *newStack){
 	return deleteElementAt(newStack->list, newStack->list->count - 1);
 }
+
+void * lifo(Stack *newStack){
+	return deleteElementAt(newStack->list, 0);
+}
+
+
+
+
+
+
+
+
+
+

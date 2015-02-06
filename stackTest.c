@@ -19,7 +19,7 @@ void test_that_function_push_push_the_element_in_the_stack_for_float(){
 	Stack newStack = createStack();
 	float data = 2.83;
 	assert(push(&newStack, &data)==1);
-	assertEqual((*(float *)newStack.list->tail->data), 2.83);
+	assertEqual(*((float *)newStack.list->tail->data), 2.83);
 }
 
 void test_that_function_push_push_the_element_in_the_stack_for_char(){
@@ -86,3 +86,41 @@ void test_that_function_pop_pops_the_element_in_the_stack_for_float(){
 	assertEqual(newStack.list->count , 2);
 }
 
+void test_that_function_lifo_pops_the_first_element_in_the_stack_for_int(){
+	Stack newStack = createStack();
+	int data1 = 2, data2 = 4, data3 = 6;
+	push(&newStack, &data1);
+	push(&newStack, &data2);
+	push(&newStack, &data3);
+	assertEqual(newStack.list->count , 3);
+	assertEqual(*(int *)lifo(&newStack), 2	);
+	assertEqual(*(int *)newStack.list->tail->data, 6);	
+	assertEqual(*(int *)newStack.list->head->data, 4);	
+	assertEqual(newStack.list->count , 2);
+}
+
+void test_that_function_lifo_pops_the_first_element_in_the_stack_for_char(){
+	Stack newStack = createStack();
+	char data1 = 'a', data2 = 'b', data3 = 'c';
+	push(&newStack, &data1);
+	push(&newStack, &data2);
+	push(&newStack, &data3);
+	assertEqual(newStack.list->count, 3);
+	assertEqual(*(char *)lifo(&newStack), 'a');
+	assertEqual(*(char *)newStack.list->tail->data, 'c');	
+	assertEqual(*(char *)newStack.list->head->data, 'b');	
+	assertEqual(newStack.list->count , 2);
+}
+
+void test_that_function_lifo_pops_the_first_element_in_the_stack_for_float(){
+	Stack newStack = createStack();
+	float data1 = 1.23, data2 = 3.54, data3 = 2.32;
+	push(&newStack, &data1);
+	push(&newStack, &data2);
+	push(&newStack, &data3);
+	assertEqual(newStack.list->count, 3);
+	assertEqual(*(float *)lifo(&newStack), 1.23);
+	assertEqual(*(float *)newStack.list->tail->data, 2.32);	
+	assertEqual(*(float *)newStack.list->head->data, 3.54);	
+	assertEqual(newStack.list->count , 2);
+}
