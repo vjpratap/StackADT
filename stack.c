@@ -14,7 +14,7 @@ Stack createStack(void){
 int push(Stack *newStack, void *data){
 	Node * newNode = create_node(data);
 	add_to_list(newStack->list, newNode);
-	newStack->top = newNode;
+	newStack->top = newNode;	
 	return newStack->list->count;
 }
 
@@ -25,6 +25,7 @@ void * pop(Stack *newStack){
 void * lifo(Stack *newStack){
 	return deleteElementAt(newStack->list, 0);
 }
+
 
 
 

@@ -11,3 +11,4 @@ Stack createStack(void);
 int push(Stack *, void *);
 void * pop(Stack *);
 void * lifo(Stack *);
+int giveIndex(Stack *, void *);
